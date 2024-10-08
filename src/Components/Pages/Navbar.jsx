@@ -73,7 +73,7 @@ const Navbar = () => {
 
           <div className="flex items-center text-yellow-500 text-bold ml-4 mr-4">
             <button
-              onClick={() => navigate("/")}
+              onClick={() => navigate("/DejaVuMarket")}
               className="p-2 text-yellow-500 text-bold rounded-full hover:bg-yellow-500 hover:text-black transition  mr-4"
             >
               <svg
