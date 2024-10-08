@@ -10,7 +10,7 @@ function App() {
     <Router>
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/DejaVuMarke" element={<Home />} />
         <Route path="/info" element={<Info />} />
        
       </Routes>
