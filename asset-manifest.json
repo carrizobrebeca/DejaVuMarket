@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/DejaVuMarket/static/css/main.af8784fc.css",
-    "main.js": "/DejaVuMarket/static/js/main.e95a66ab.js",
+    "main.js": "/DejaVuMarket/static/js/main.ceb17910.js",
     "static/js/453.419a5d54.chunk.js": "/DejaVuMarket/static/js/453.419a5d54.chunk.js",
     "static/media/hamburguesabase.png": "/DejaVuMarket/static/media/hamburguesabase.bee7bac52257989a6d21.png",
     "static/media/deja.png": "/DejaVuMarket/static/media/deja.c4374b093eb35789bc91.png",
     "index.html": "/DejaVuMarket/index.html",
     "main.af8784fc.css.map": "/DejaVuMarket/static/css/main.af8784fc.css.map",
-    "main.e95a66ab.js.map": "/DejaVuMarket/static/js/main.e95a66ab.js.map",
+    "main.ceb17910.js.map": "/DejaVuMarket/static/js/main.ceb17910.js.map",
     "453.419a5d54.chunk.js.map": "/DejaVuMarket/static/js/453.419a5d54.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.af8784fc.css",
-    "static/js/main.e95a66ab.js"
+    "static/js/main.ceb17910.js"
   ]
 }
