@@ -20,7 +20,7 @@ const Home = () => {
       try {
         setLoading(true);
         setError(null);
-        const response = await axios.get(`http://localhost:3001/products`);
+        const response = await axios.get(`http://dejavumarket-back-production.up.railway.app/products`);
         const products = response.data;
         setAllProducts(products);
 

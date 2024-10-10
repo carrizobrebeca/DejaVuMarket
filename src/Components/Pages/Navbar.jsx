@@ -45,7 +45,7 @@ const Navbar = () => {
   const createPreference = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:3001/create_preference",
+        "http://dejavumarket-back-production.up.railway.app/create_preference",
         {
           title: "Compra",
           quantity: 1,
