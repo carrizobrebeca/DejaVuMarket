@@ -32,7 +32,7 @@ const Navbar = () => {
 
   const calcularTotal = (carrito) => {
     return carrito.reduce((acc, item) => {
-      if (item.nombre === "Empanadas") {
+      if (item.categoria === "Empanadas") {
         if (item.cantidad === 6) {
           return acc + 5500; // Precio total para 6 empanadas
         } else if (item.cantidad === 12) {
