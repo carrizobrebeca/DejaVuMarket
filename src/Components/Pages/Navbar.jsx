@@ -33,7 +33,7 @@ const Navbar = () => {
   const calcularPrecioPorItem = (item) => {
     let precioFinal = item.precio;
 
-    if (item.nombre === "Empanadas") {
+    if (item.categoria === "Empanadas") {
       if (item.cantidad === 6) {
         precioFinal = 5500; // Precio especial para 6 empanadas
       } else if (item.cantidad === 12) {
