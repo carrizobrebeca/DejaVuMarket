@@ -31,10 +31,10 @@ const Info = () => {
                 1
               </div>
               <h3 className="text-xl font-semibold mb-2 text-yellow-500">
-                Paso 1: Agrega al carrito
+                Paso 1: Agregá al carrito
               </h3>
               <p className="text-md text-gray-700">
-                Agrega los productos que desees al carrito
+                Agregá los productos que desees al carrito
               </p>
             </div>
 
@@ -57,7 +57,7 @@ const Info = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2 text-yellow-500">Paso 3: Comprar</h3>
               <p className="text-md text-gray-700">
-                Presiona el botón comprar y luego en el botón de Mercado Pago.
+                Presioná el botón comprar y luego en el botón de Mercado Pago.
                 Listo. Ya puedes retirar tu compra en nuestro local.
               </p>
             </div>
@@ -65,7 +65,6 @@ const Info = () => {
         </div>
       </section>
 
-      {/* How It Works Section con efecto de aparición al hacer scroll */}
     </>
   );
 };

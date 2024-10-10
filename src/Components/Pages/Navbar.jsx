@@ -31,7 +31,20 @@ const Navbar = () => {
   }, []);
 
   const total = carrito.reduce((acc, item) => {
-    return acc + item.precio * item.cantidad;
+    let precioFinal = item.precio;
+
+  // Aplica lógica especial para empanadas
+  if (item.nombre === "Empanadas") {
+    if (item.cantidad === 6) {
+      precioFinal = 5500; // Precio especial para 6 empanadas
+    } else if (item.cantidad === 12) {
+      precioFinal = 1000; // Precio especial para 12 empanadas
+    } else {
+      precioFinal = item.precio; // Precio normal para otras cantidades
+    }
+  }
+
+  return acc + precioFinal * item.cantidad; 
   }, 0);
 
   const handleCantidadChange = (id, cantidad) => {

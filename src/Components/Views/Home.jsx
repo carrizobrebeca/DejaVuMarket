@@ -93,10 +93,10 @@ const Home = () => {
               className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 text-yellow-500 text-bold font-custom w-full md:w-1/2"
               style={{ textAlign: "left" }}
             >
-              <h1 className="text-orange-500">Bienvenido</h1>
-              <h3>Hacé tu pedio</h3>
-              <h3>Realizá el pago</h3>
-              <h3>Retirá en nuestro local</h3>
+              <h1 className="text-orange-500">Bienvenido,</h1>
+              <h3>Hacé tu pedido,</h3>
+              <h3>Realizá el pago,</h3>
+              <h3>Retirá en nuestro local!</h3>
             </motion.h1>
 
             {/* Segundo texto - Lado Derecho */}
