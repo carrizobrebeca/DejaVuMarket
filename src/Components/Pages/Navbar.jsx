@@ -30,24 +30,21 @@ const Navbar = () => {
     };
   }, []);
 
-  const calcularPrecioPorItem = (item) => {
-    let precioFinal = item.precio;
-
-    if (item.categoria === "Empanadas") {
-      if (item.cantidad === 6) {
-        precioFinal = 5500; // Precio especial para 6 empanadas
-      } else if (item.cantidad === 12) {
-        precioFinal = 10000; // Precio especial para 12 empanadas
+  const calcularTotal = (carrito) => {
+    return carrito.reduce((acc, item) => {
+      if (item.nombre === "Empanadas") {
+        if (item.cantidad === 6) {
+          return acc + 5500; // Precio total para 6 empanadas
+        } else if (item.cantidad === 12) {
+          return acc + 1000; // Precio total para 12 empanadas
+        }
       }
-    }
-
-    return precioFinal; // Devuelve el precio ajustado
+      // Para otros productos, multiplicar por el precio y la cantidad
+      return acc + (item.precio * item.cantidad);
+    }, 0);
   };
 
-   const total = carrito.reduce((acc, item) => {
-    return acc + calcularPrecioPorItem(item) * item.cantidad; // Multiplica el precio ajustado por la cantidad
-  }, 0);
-
+  const total = calcularTotal(carrito);
 
   const handleCantidadChange = (id, cantidad) => {
     const nuevaCantidad = Math.max(1, Number(cantidad));
